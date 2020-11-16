@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range colors</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="align">
+      <div class="title">
+        <img
+          class="logo"
+          src="https://www.igti.com.br/wp-content/uploads/2020/02/parceirosAtivo-114.png"
+          alt="Logo IGTI"
+        />
+        <h2>
+          IGTI - Instituto de Gestão e <br />
+          Tecnologia da Informação
+        </h2>
+        <h3>Projeto - Cores RGB</h3>
+      </div>
+      <!-- div quebra linha -->
+      <div class="section">
+        <span class="display-block text-position">Red</span>
+        <span class="display-block text-position">Green</span>
+        <span class="display-block text-position">Blue</span>
+      </div>
+      <div class="section">
+        <input
+          id="rangeRed"
+          class="display-block"
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input
+          id="rangeGreen"
+          class="display-block"
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input
+          id="rangeBlue"
+          class="display-block"
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+        />
+      </div>
+      <div class="section">
+        <!-- Duas class em uma tag -->
+        <input
+          class="display-block textInput-size"
+          id="inputRed"
+          disabled
+          value="0"
+          type="text"
+          size="1"
+        />
+        <input
+          class="display-block textInput-size"
+          id="inputGreen"
+          disabled
+          value="0"
+          type="text"
+          size="1"
+        />
+        <input
+          class="display-block textInput-size"
+          id="inputBlue"
+          disabled
+          value="0"
+          type="text"
+          size="1"
+        />
+      </div>
+      <div class="section square"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

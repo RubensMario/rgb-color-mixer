@@ -1,0 +1,128 @@
+/* Para centralizar todo o documento, poderia usar uma tag com classe container (.container + TAB para criá-la, via emmet, no arquivo HTML) englobando todas as demais, com a seguinte forma:
+.container {
+  text-align: center;
+  padding: 50px; 
+  */
+
+body {
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0; /* margem interna com relação à janela */
+
+  background-color: #222;
+}
+.align {
+  height: 100vh;
+  display: table; /* Alinhar elementos um abaixo do outro */
+  justify-content: center;
+  align-items: center;
+  margin-left: auto; /* Centralizar */
+  margin-right: auto;
+}
+
+.logo {
+  object-fit: cover;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2,
+h3 {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+  color: rgb(150, 156, 156);
+}
+
+h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+span {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  position: relative;
+}
+
+.text-position {
+  position: relative;
+  top: 5px;
+  left: 5%;
+}
+
+.section {
+  display: inline-block; /* divs como blocos alinhados lateralmente */
+}
+
+/* Configurar class como bloco */
+/* Posiciona elementos como bloco, verticalmente */
+.display-block {
+  display: block;
+  padding: 4px;
+  margin: 5px;
+  margin-left: 1px;
+}
+
+.textInput-size {
+  font-weight: bold;
+  width: 25px;
+  height: 10px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+input[type='range'] {
+  width: 150%;
+  margin: 13.8px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  margin-top: 5px;
+  background: white;
+  border: 0.2px solid #f3eeee;
+  border-radius: 1.3px;
+  width: 100%;
+  height: 0.4px;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  margin-top: -8px;
+  width: 15px;
+  height: 15px;
+  background: white; /* rgb(156, 150, 150) */
+  border: 3px solid #19d3d3;
+  border-radius: 20%;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* Gera um quadrado responsivo. */
+.square {
+  width: 48%;
+  height: 0; /* A mágica está aqui */
+  padding-bottom: 48%; /* ... e está aqui */
+  margin-top: 10%;
+  margin-left: 25%;
+  float: left;
+  position: relative;
+  background-color: white;
+  border: solid 1px;
+  border-width: 2px;
+  border-color: white; /* #19d3d3; */
+  border-radius: 20px; /* Arredonda bordas */
+}
